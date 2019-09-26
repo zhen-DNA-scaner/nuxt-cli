@@ -1,0 +1,32 @@
+.login-page{
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-wraper{
+  flex: 1 1 auto;
+  padding-top: 60px;
+}
+@media screen and (min-width:376px){
+  .top-wraper{
+    padding-top: 100px;
+  }
+}
+.logo{
+  height: 50px;
+}
+.form-wraper{
+  width: 400px;
+  margin: 20px auto;
+  padding: 0 30px;
+  max-width: 100%;
+}
+
+footer{
+  padding: 30px 0;
+}
+
+.center{
+  text-align: center;
+}

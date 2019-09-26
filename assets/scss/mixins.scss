@@ -1,0 +1,28 @@
+@mixin layoutBase() {
+  html, body{
+    padding: 0;
+    margin: 0;
+  }
+  #__nuxt, #__layout, #__container{
+    height: 100%;
+  }
+  #__container{
+    @include scrollbar(8px);
+  }
+  #__container>div{
+    height: 100vh;
+  }
+}
+
+@mixin scrollbar($width: 4px, $background: rgba(0,0,0,.2)) {
+  height: 100%;
+  overflow-y: auto;
+  &::-webkit-scrollbar {
+    background: none;            // 原本滚动条背景去掉
+    width: $width;               // 滚动条粗细
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $background;     // 滚动条背景
+    border-radius: $width/2;         // 滚动条圆角
+  }
+}

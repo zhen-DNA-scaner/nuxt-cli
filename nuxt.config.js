@@ -30,7 +30,10 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '@/plugins/antd-ui'
+    '@/plugins/global',
+    '@/plugins/antd-ui',
+    // { src: '~/plugins/axios', ssr: !isDev },
+    isDev ? { src: '~/plugins/mock', ssr: false } : {},
   ],
   /*
   ** Nuxt.js dev-modules
@@ -41,14 +44,14 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
-    '@nuxtjs/axios',
+    // '@nuxtjs/axios',
     '@nuxtjs/style-resources',
   ],
   /*
   ** CSS 变量 和 mixin
   */
   styleResources: {
-    scss: './assets/css/variables.scss'
+    scss: './assets/scss/*.scss'
   },
   //开启axios代理
   axios: {
