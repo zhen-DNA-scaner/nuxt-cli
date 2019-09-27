@@ -3,7 +3,7 @@
 import loginForm from './components/main'
 import forget from './components/forget'
 export default {
-  layout: 'withbg',
+  layout: 'simple-background',
   components: {loginForm, forget},
   data(){
     return{

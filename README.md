@@ -29,13 +29,16 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 APP
 ├─ assets
 |  └── css
-|      └── variables.scss       // global css variables & mixin
+|      └── mixins.scss          // global css mixin
+|      └── variables.scss       // global css variables
 ├─ directive                    // vue directive
 ├─ filters                      // vue filters
 ├─ plugins
 |  ├── axios.js                 // axios interceptor
 |  └── global.js                // global attributes & methods
+|  └── mock.js                  // virtual APIs
 └─ utils
+   ├── api.js                   // real APIs
    ├── funlib.js                // custom function library
    └── storage.js               // packaged storage to be like $storage.set() or $storage.get() method
 ```

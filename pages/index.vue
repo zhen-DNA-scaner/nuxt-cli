@@ -17,7 +17,7 @@
           <a-icon type="file-unknown" /> Documentation
         </a>
         <a
-          href="https://github.com/nuxt/nuxt.js"
+          href="https://github.com/Zepeng-Zheng/nuxt-cli"
           target="_blank"
           class="button--grey"
         >
