@@ -1,8 +1,8 @@
-# xy-manage
+# Nuxt Cli
 
-> Xiaoyue administrator system
+> Nuxt Cli
 
-Base on [Nuxt.js](https://zh.nuxtjs.org/guide) and [sass](https://www.sass.hk/).
+Base on [Nuxt.js](https://zh.nuxtjs.org/guide) and [Ant Design UI](https://vue.ant.design/docs/vue/introduce-cn/).
 
 ## Build Setup
 
